@@ -4,7 +4,7 @@ let message = document.querySelector(".msg");
 
 function getRandomNum(){
 
-    let randomNumber = Math.ceil(Math.random() * 5);
+    let randomNumber = Math.ceil((Math.random() * 100));
     console.log(randomNumber);
     let inputElem  = input.value;
     console.log(inputElem);
