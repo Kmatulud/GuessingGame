@@ -1,11 +1,12 @@
 let guessElem = document.querySelector(".guessBtn");
-let inputElem = document.querySelector(".userInput");
+let input = document.querySelector(".userInput");
 let message = document.querySelector(".msg");
 
-console.log(inputElem);
+// console.log(inputElem);
 function getRandomNum(){
-    let randomNumber = Math.ceil((Math.random() * 100));
+    let randomNumber = Math.ceil(Math.random() * 5);
     console.log(randomNumber);
+    let inputElem  = input.value;
 
     if(inputElem > randomNumber){
         message.innerHTML = "Your guess is too high";
@@ -14,11 +15,11 @@ function getRandomNum(){
         message.innerHTML = "Your guess is too low";
     }
     else{
-        message.innerHTML = "Correct, the secret number is 'randomNumber'";
+        message.innerHTML = "Correct, the secret number is ${randomNumber}";
     }
-    setTimeout(()=>{
-        message.innerHTML = "";
-    }, 5000);
+//     setTimeout(()=>{
+//         message.innerHTML = "";
+//     }, 10000);
 }
 
 guessElem.addEventListener("click", getRandomNum);
