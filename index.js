@@ -22,7 +22,7 @@ function getRandomNum(){
         message.innerHTML = "Your guess is too low";
     }
     else{
-        message.innerHTML = "Correct, the secret number is ${randomNumber}";
+        message.innerHTML = `Correct, the secret number is ${randomNumber}`;
     }
     setTimeout(()=>{
         message.innerHTML = "";
