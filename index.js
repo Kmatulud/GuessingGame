@@ -32,8 +32,6 @@ function getRandomNum(){
 
         setTimeout(()=>{
             location.reload();
-            // randomNumber = Math.ceil((Math.random() * 100));
-            // message.innerHTML = "New game started";
         }, 5000);
     }
     setTimeout(()=>{
