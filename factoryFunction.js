@@ -1,5 +1,8 @@
 const RandomNumFactory = () => {
-    let userInput ;
+    let userInput;
+    let random = Math.ceil((Math.random() * 100));
+    let message = "";
+
 
     const setUserInput = input => {
         userInput = input;
@@ -13,9 +16,9 @@ const RandomNumFactory = () => {
         randomNum = 55;
         return randomNum;
     }
-    const generateRandomNum = random => {
-        random = Math.ceil((Math.random() * 100));;
-        return random;
+    const generateRandomNum = randomN => {
+        randomN = random;
+        return randomN;
     }
 
     const generateErrorMsg = () => {
